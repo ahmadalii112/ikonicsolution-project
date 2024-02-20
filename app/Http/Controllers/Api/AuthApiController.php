@@ -6,11 +6,16 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\LoginUserRequest;
 use App\Http\Requests\RegisterRequest;
 use App\Models\User;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class AuthApiController extends Controller
 {
+    /**
+     * @param  RegisterRequest  $request
+     * @return JsonResponse
+     */
     public function register(RegisterRequest $request)
     {
         $user = new User([
@@ -26,6 +31,10 @@ class AuthApiController extends Controller
         return response()->json(['token' => $token], 201);
     }
 
+    /**
+     * @param  LoginUserRequest  $request
+     * @return JsonResponse
+     */
     public function login(LoginUserRequest $request)
     {
         $credentials = $request->only('email', 'password');
@@ -39,6 +48,10 @@ class AuthApiController extends Controller
         }
     }
 
+    /**
+     * @param  Request  $request
+     * @return JsonResponse
+     */
     public function logout(Request $request)
     {
         $request->user()->currentAccessToken()->delete();

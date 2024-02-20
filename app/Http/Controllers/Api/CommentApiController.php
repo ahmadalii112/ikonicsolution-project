@@ -9,6 +9,11 @@ use App\Models\Comment;
 
 class CommentApiController extends Controller
 {
+    /**
+     * @param  CommentRequest  $request
+     * @param  int  $feedbackId
+     * @return CommentResource
+     */
     public function __invoke(CommentRequest $request, int $feedbackId)
     {
         $comment = auth()->user()->comments()->create([
