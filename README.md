@@ -5,7 +5,9 @@
 ```bash
 PHP Version ............. 8.1.10  
 Laravel Version ......... 10.44.0  
-Composer Version .......... 2.4.2  
+Composer Version .......... 2.4.2
+Node Version .......... v18.17.0
+
 ```
 
 ### Setup Instructions
