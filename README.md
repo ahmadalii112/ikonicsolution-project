@@ -31,7 +31,7 @@ Composer Version .......... 2.4.2
 
 ### `Note:` 
 <p>
-As it is mentioned in the email that  You have the flexibility to select your preferred frontend technology from the options I have Done this with Blade and Laravel also I have Created APIs of it and I have know basic knowledge of VUE js but it will choose blade
+As it is mentioned in the email that  You have the flexibility to select your preferred frontend technology from the options I have Done this with Blade and Laravel also I have Created APIs of it and I have know basic knowledge of VUE js but it will choose blade you can review my code base
 </p>
 
 
@@ -65,6 +65,10 @@ Route::middleware('auth')->group(function () {
 });
 ```
 
- 
+### Click here to watch 👇🏻 
+
+Demo Video : https://www.loom.com/share/d711d3fb43cf4945b7e0be89de7f415f?sid=6dee8be4-686d-4886-9c31-b4270e2b78c6
+
+
 
 
