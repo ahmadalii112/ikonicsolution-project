@@ -43,6 +43,7 @@ class FeedbackController extends Controller
     public function store(FeedbackRequest $request): RedirectResponse
     {
         $this->feedbackService->createFeedback($request->validated());
+        notify()->success('Thanks for your Feedback');
         return redirect(route('feedback.index'));
     }
 

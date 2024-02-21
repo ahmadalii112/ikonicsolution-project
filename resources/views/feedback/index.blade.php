@@ -30,7 +30,7 @@
                                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Description</th>
                                             <th scope="col" class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900">Submitted by:</th>
                                             <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-0">
-                                                <span class="sr-only">Edit</span>
+                                                <span class="sr-only">Comment</span>
                                             </th>
                                         </tr>
                                         </thead>
@@ -42,7 +42,7 @@
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{ Str::limit($feedback->description, 10)  }}</td>
                                                 <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500">{{$feedback->user->name }}</td>
                                                 <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right text-sm font-medium sm:pr-0">
-                                                    <a href="{{ route('comment.create', $feedback->id) }}" class="text-indigo-600 hover:text-indigo-900">Add Comment<span class="sr-only">, Lindsay Walton</span></a>
+                                                    <a href="{{ route('comment.create', $feedback->id) }}" class="text-indigo-600 hover:text-indigo-900">Click here to make comment<span class="sr-only">, Lindsay Walton</span></a>
                                                 </td>
                                             </tr>
                                         @empty

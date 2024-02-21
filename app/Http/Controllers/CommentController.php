@@ -42,6 +42,7 @@ class CommentController extends Controller
     public function store(CommentRequest $request, int $feedbackId)
     {
         $this->commentService->createComment($request->validated(), $feedbackId);
+        notify()->success('Thanks for your Comment');
         return redirect()->route('comment.create', $feedbackId)->withFragment('comments');
     }
 

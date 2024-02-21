@@ -17,7 +17,7 @@
                                 <p class="mt-1 text-sm leading-6 text-gray-600">This information will be displayed publicly so be careful what you share.</p>
                                 <div class="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
                                     <div class="sm:col-span-3">
-                                        <label for="title" class="block text-sm font-medium leading-6 text-gray-900">Title</label>
+                                        <label for="title" class="block text-sm font-medium leading-6 text-gray-900 required">Title</label>
                                         <div class="mt-2">
                                             <input type="text" name="title" id="title" value="{{ old('title') }}" autocomplete="title" class=" @error('title') ring-red-600 @enderror block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                         </div>
@@ -27,7 +27,7 @@
                                     </div>
 
                                     <div class="sm:col-span-3">
-                                        <label for="category" class="block text-sm font-medium leading-6 text-gray-900">Category</label>
+                                        <label for="category" class="block text-sm font-medium leading-6 text-gray-900 required">Category</label>
                                         <div class="mt-2">
                                             <input type="text" name="category" id="category" value="{{ old('title') }}" autocomplete="family-name" class="@error('title') ring-red-600 @enderror block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
                                         </div>
@@ -37,9 +37,9 @@
                                     </div>
 
                                     <div class="col-span-full">
-                                        <label for="description" class="block text-sm font-medium leading-6 text-gray-900">Description</label>
+                                        <label for="description" class="block text-sm font-medium leading-6 text-gray-900 required">Description</label>
                                         <div class="mt-2">
-                                            <textarea id="description" name="description" rows="3" class="block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">{{ old('description') }} </textarea>
+                                            <textarea id="description" name="description" rows="3" class="@error('description') ring-red-600 @enderror  block w-full rounded-md border-0 p-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">{{ old('description') }} </textarea>
                                         </div>
                                         @error('description')
                                         <div class="text-red-600 text-sm">{{ $message }}</div>

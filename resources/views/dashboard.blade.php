@@ -9,7 +9,7 @@
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900">
-                    <a href="{{ route('feedback.create') }}">Click here! to add your feedback</a>
+                    <a href="{{ route('feedback.create') }}" class="text-indigo-600 hover:text-indigo-900">Click here! to add your feedback</a>
                 </div>
             </div>
         </div>

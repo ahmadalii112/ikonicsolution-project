@@ -12,8 +12,8 @@
 
                     <div>
                         <div class="px-4 sm:px-0">
-                            <h3 class="text-base font-semibold leading-7 text-gray-900">Applicant Information</h3>
-                            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">Personal details and application.</p>
+                            <h3 class="text-base font-semibold leading-7 text-gray-900">Feedback Information</h3>
+                            <p class="mt-1 max-w-2xl text-sm leading-6 text-gray-500">feedback details and comments.</p>
                         </div>
                         <div class="mt-6">
                             <dl class="grid grid-cols-1 sm:grid-cols-2">

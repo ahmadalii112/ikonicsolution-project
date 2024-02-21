@@ -58,6 +58,7 @@ use App\Http\Controllers\CommentController;
 use App\Http\Controllers\FeedbackController;
 
 Route::middleware('auth')->group(function () {
+    // other routes
     Route::resource('feedback', FeedbackController::class)->only('index', 'store', 'create');
     Route::get('/feedback/{feedback}/comments', [CommentController::class, 'create'])->name('comment.create');
     Route::post('/feedback/{feedback}/comments', [CommentController::class, 'store'])->name('comment.store');
