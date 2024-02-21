@@ -2,7 +2,6 @@
 
 
 
-
 ```bash
 PHP Version ............. 8.1.10  
 Laravel Version ......... 10.44.0  
@@ -30,10 +29,13 @@ Composer Version .......... 2.4.2
 
 ## Product Feedback
 
+### `Note:` 
+<p>
+As it is mentioned in the email that  You have the flexibility to select your preferred frontend technology from the options I have Done this with Blade and Laravel also I have Created APIs of it and I have know basic knowledge of VUE js but it will choose blade
+</p>
+
 
 I have created APIs and Web Based Project 
-
-
 - api.php
 ```php
 use App\Http\Controllers\Api\AuthApiController;
@@ -61,5 +63,7 @@ Route::middleware('auth')->group(function () {
     Route::post('/feedback/{feedback}/comments', [CommentController::class, 'store'])->name('comment.store');
 });
 ```
+
+ 
 
 
