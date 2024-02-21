@@ -51,13 +51,16 @@
                                                         </div>
                                                     </div>
                                                     <div class="ml-4 flex-shrink-0">
-                                                        <p class="font-medium text-indigo-600 hover:text-indigo-500">{{ $feedback?->user?->name }}</p>
+                                                        <p class="font-medium text-indigo-600 hover:text-indigo-500">{{ $comment?->user->name }}</p>
                                                     </div>
                                                 </li>
                                             @endforeach
                                         </ul>
                                     </dd>
-
+                                       <div class="mt-4">
+                                           <!-- Pagination links -->
+                                           {{ $comments->links() }}
+                                       </div>
 
                                 </div>
                             </dl>

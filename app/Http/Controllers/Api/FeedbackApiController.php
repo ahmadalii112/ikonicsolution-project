@@ -30,5 +30,4 @@ class FeedbackApiController extends Controller
         $feedback =  auth()->user()->feedbacks()->create($request->validated());
         return new FeedbackResource($feedback);
     }
-
 }
